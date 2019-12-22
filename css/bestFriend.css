@@ -1,0 +1,138 @@
+.head2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-left: 5%;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: absolute;
+  width: 40%; 
+  margin-left: 3%;
+}
+
+.btn_wrap1 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    background-color: #EEEEED;
+    border-radius: 80px;
+    padding: 0 18px;
+    will-change: transform;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-bottom: 8%;
+}
+
+.btn_wrap1:hover {
+    /* transition-delay: .4s; */
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.308);
+            
+}
+
+.btn_wrap1:hover span {
+    -webkit-transition-delay: .25s;
+            transition-delay: .25s;
+    -webkit-transform: translateX(-280px);
+            transform: translateX(-280px)
+}
+
+.btn_wrap1:hover i {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.content1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: 20%;
+    color: #575251;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
