@@ -7,18 +7,37 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Kanit|Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link href="./css/homepage.css" rel="stylesheet">
     <link href="./css/shareBotton.css" rel="stylesheet">
     <link href="./css/bestFriend.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <title>My Best Friends</title>
 </head>
 
 
 <body>
-    <nav>
-        <div class="navLabel">WACHIRAWIT BLOG</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html" style="font-size: 30px;">Wachirawit Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home Page<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./zengarden/zengarden.html" target="_blank">Zengarden</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CSS Specificity</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <img class="banner" src="img/Banner.png">
+    <img class="bann" src="img/Banner.png">
     <div>
         <img class="ingimg" src="img/Wachirawit.jpg">
         <div class="container1">
@@ -67,17 +86,17 @@
                 </div>
                 <div class="column" style="background-color: bisque;">
                     <div class="slideshow-container">
-                        <div class="mySlides1 fade">
+                        <div class="mySlides1 fade1">
                             <div class="numbertext">1 / 3</div>
                             <img src="./img/bff1/bff1.jpg" style="width:100%;">
                         </div>
 
-                        <div class="mySlides1 fade">
+                        <div class="mySlides1 fade1">
                             <div class="numbertext">2 / 3</div>
                             <img src="./img/bff1/bff2.jpg" style="width:100%">
                         </div>
 
-                        <div class="mySlides1 fade">
+                        <div class="mySlides1 fade1">
                             <div class="numbertext">3 / 3</div>
                             <img src="./img/bff1/bff3.jpg" style="width:100%">
                         </div>
@@ -91,17 +110,17 @@
                 <div class="row">
                     <div class="column" style="background-color: bisque;">
                         <div class="slideshow-container">
-                            <div class="mySlides2 fade">
+                            <div class="mySlides2 fade1">
                                 <div class="numbertext">1 / 3</div>
                                 <img src="./img/bff2/bff1.jpg" style="width:100%;">
                             </div>
 
-                            <div class="mySlides2 fade">
+                            <div class="mySlides2 fade1">
                                 <div class="numbertext">2 / 3</div>
                                 <img src="./img/bff2/bff2.jpg" style="width:100%">
                             </div>
 
-                            <div class="mySlides2 fade">
+                            <div class="mySlides2 fade1">
                                 <div class="numbertext">3 / 3</div>
                                 <img src="./img/bff2/bff3.jpg" style="width:100%">
                             </div>
@@ -150,21 +169,21 @@
                     </div>
                     <div class="column" style="background-color: bisque;">
                         <div class="slideshow-container">
-                            <div class="mySlides3 fade">
+                            <div class="mySlides3 fade1">
                                 <div class="numbertext">1 / 3</div>
                                 <img src="./img/bff3/bff1.jpg" style="width:100%;">
                             </div>
-    
-                            <div class="mySlides3 fade">
+
+                            <div class="mySlides3 fade1">
                                 <div class="numbertext">2 / 3</div>
                                 <img src="./img/bff3/bff2.jpg" style="width:100%">
                             </div>
-    
-                            <div class="mySlides3 fade">
+
+                            <div class="mySlides3 fade1">
                                 <div class="numbertext">3 / 3</div>
                                 <img src="./img/bff3/bff3.jpg" style="width:100%">
                             </div>
-    
+
                             <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
                         </div>
