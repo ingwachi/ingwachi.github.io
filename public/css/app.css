@@ -1,0 +1,35 @@
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  background-color: white;
+}
+
+.center-box {
+  color: #333;
+  background-color: #dd2266;
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../assets/sass/app.scss","../../assets/sass/_variable.scss"],"names":[],"mappings":"AAOA;EAJI,mBAIsB;EAHtB,eAGsB;EAFtB,WAEsB;;;AAE1B;EACE;EACA,OCVc;EDWd;;;AAGF;EACI,OCfY;EDgBZ,kBCfc;EDgBd;EACA;EACA;;;AAIA;EACE;EACA;EACA;;AAGF;EAAK;;AAEL;EACE;EACA;EACA","file":"app.css"}
