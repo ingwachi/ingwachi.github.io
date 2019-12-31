@@ -1,0 +1,42 @@
+@use 'var';
+
+body {
+    background-color: #EAFAF1;
+}
+
+h1, h2, h3, h4, h5, a {
+    font-family: var.$font-stack;
+}
+
+nav {
+    position: fixed;
+}
+
+.sideB {
+    font-family: var.$font-stack;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.content-layout {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: var.$font-stack;
+}
+
+.head-content {
+    margin-top: 3%;
+    font-size: 25px;
+}
+
+.img-footer {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.ft {
+    font-size: 50px;
+    text-align: center;
+}
