@@ -1,0 +1,54 @@
+h1, h2, h3, h4, h5, a {
+  font-family: "Poppins", sans-serif;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.content-layout {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Kanit", sans-serif;
+}
+
+.head-content {
+  font-size: 50px;
+  font-family: "Kanit", sans-serif;
+  margin-top: 3%;
+}
+
+.content {
+  font-family: "Kanit", sans-serif;
+  font-size: 22px;
+  color: #566573;
+}
+
+.spcf-img {
+  margin-left: 23%;
+}
+
+.type-selector {
+  margin-left: 3%;
+  font-size: 22px;
+  color: #566573;
+}
+
+.selector-cal {
+  margin-left: 3%;
+  font-size: 22px;
+  color: #566573;
+  font-family: "Kanit", sans-serif;
+}
+
+.example {
+  margin-left: 3%;
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */

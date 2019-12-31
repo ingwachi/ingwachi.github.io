@@ -1,0 +1,54 @@
+@use 'var';
+
+h1, h2, h3, h4, h5, a {
+    font-family: var.$font-stack;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.content-layout{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: var.$font-stack1;
+}
+
+.head-content {
+    font-size: 50px;
+    font-family: var.$font-stack1;
+    margin-top: 3%;
+}
+
+.content {
+    font-family: var.$font-stack1;
+    font-size: 22px;
+    color: var.$content-color;
+}
+
+.spcf-img {
+    margin-left: 23%;
+}
+
+.type-selector {
+    margin-left: 3%;
+    font-size: 22px;
+    color: var.$content-color;
+}
+
+.selector-cal {
+    margin-left: 3%;
+    font-size: 22px;
+    color: var.$content-color;
+    font-family: var.$font-stack1;
+}
+
+.example {
+    margin-left: 3%;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: #333;
+}

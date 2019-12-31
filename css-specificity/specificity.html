@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CSS Specificity</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html" style="font-size: 30px;">Wachirawit Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home Page<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../zengarden/zengarden.html">Zengarden</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="specificity.html">CSS Specificity</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <img src="./img/banner.png" class="banner-img">
+    <div class="content-layout">
+        <h1 class="head-content">CSS Specificity คืออะไร ?</h1>
+        <p class="content">CSS Specificity คือการเลือก CSS Selector มาแสดงบนเว็บไซต์โดยแต่ละ selector
+            จะมีลำดับความสำคัญแตกต่างกัน</p>
+        <img class="spcf-img" src="./img/css-specificity.png">
+        <h1 class="head-content">ประเภทของ Selector</h1>
+        <div class="type-selector">
+            <div>1. Inline Style คือการใส่ style เข้าไปใน tag ที่ต้องการได้เลย</div>
+            <div>2. ID Selectors เป็นการนำเอา id มาใช้เป็น selector ตัวอย่างการใช้เช่น #header-img</div>
+            <div>3. Class Selectors คือการนำ class มาใช้เป็น selector ตัวอย่างการใช้เช่น .header-img</div>
+            <div>4. Attribute Selectors ตัวอย่างการใช้งานเช่น [type="_blank"]</div>
+            <div>5. Pseudo-classes ตัวอย่างการใช้เช่น :hover</div>
+            <div>6. Type Selectors คือการนำ elements มาเป็น selector ตัวอย่างการใช้งานเช่น h1, h2, div </div>
+            <div>และยังมีอื่นๆอีกมากมาย</div>
+        </div>
+        <h1 class="head-content">การคำนวณค่า Specificity ของ Selector</h1>
+        <div class="selector-cal">
+            <div>สมมุติให้ Selector แต่ละประเภทมีค่าดังนี้ (เรียงจากสูงสุดไปต่ำสุด)</div>
+            <div>1. Inline Style มีค่า 1000</div>
+            <div>2. ID Selectors มีค่า 100</div>
+            <div>3. Class selectors, Attributes selectors, Pseudo-classes มีค่า 10</div>
+            <div>4. Type selectors, Pseudo-elements มีค่า 1</div>
+            <div>5. อื่นๆ มีค่า 0</div>
+            <div class="example">
+                <div>ตัวอย่างการคำนวณค่า Specificity ยิ่งค่ามากก็จะถูกนำมาแสดงบนเว็บไซต์</div>
+                <div>div a {...} = 1+1 = 2</div>
+                <div>.box a {...} = 10+1 = 11</div>
+                <div>div h1 a apan {...} = 1+1+1+1 = 4</div>
+                <div>.page h1 #title {...} = 10+1+100 = 111</div>
+                <div>#nav .selected > a:hover = 100+10+1+10 = 121</div>
+                <div>li:first-child h2 .title = 1+10+1+10 = 22</div>
+            </div>
+        </div>
+        <h1 class="head-content">เว็บไซต์สำหรับคำนวณค่า Specificity</h1>
+        <a class="selector-cal" href="https://specificity.keegan.st/">ไปยังเว็บไซต์คลิกที่นี่ https://specificity.keegan.st/</a>
+        <img src="./img/web-ex.PNG" alt="">
+    </div>
+    <footer></footer>
+</body>
+
+</html>
